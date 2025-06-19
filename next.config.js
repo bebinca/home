@@ -5,6 +5,7 @@ const nextConfig = {
     images: {
       unoptimized: true, // 如果你用了 <Image>，需要禁用图像优化
     },
+    assetPrefix: '/home', // 添加这一行确保 JS/CSS 正确加载
   }
   
   module.exports = nextConfig

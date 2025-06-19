@@ -1,12 +1,13 @@
 'use client'
 import Image from 'next/image'
 import { FaGithub, FaEnvelope, FaGoogle } from 'react-icons/fa'
+import { basePath } from '../path'
 
 export default function Profile() {
   return (
     <aside className="w-full md:w-[200px] flex-shrink-0 px-4 pt-4 md:pt-0 pb-8 flex flex-col items-center space-y-4 md:sticky md:top-24 md:h-fit">
       <Image
-        src="/avatar.jpg"
+        src={`${basePath}/avatar.jpg`}
         alt="Avatar"
         width={160}
         height={160}

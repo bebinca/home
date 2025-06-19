@@ -1,5 +1,7 @@
 'use client'
 
+import { basePath } from "../path"
+
 type PubLink = {
   label: string
   url: string
@@ -113,7 +115,7 @@ export default function Publications() {
               {pubs.map((pub, i) => (
                 <li key={i} className="flex flex-col md:flex-row gap-4 p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
                   {pub.image && (
-                    <img src={pub.image} alt={pub.title} className="w-full md:w-48 h-32 object-cover rounded" style={{ maxWidth: '100%', maxHeight: '100%' }}/>
+                    <img src={`${basePath}/${pub.image}`} alt={pub.title} className="w-full md:w-48 h-32 object-cover rounded" style={{ maxWidth: '100%', maxHeight: '100%' }}/>
                   )}
                   <div className="flex-1 space-y-1">
                     <h3 className="font-semibold">{pub.title}</h3>
