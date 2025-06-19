@@ -25,7 +25,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
       venue: 'IEEE Transactions on Visualization and Computer Graphics',
       image: '/figs/chartgpt.png',
       links: [
-        { label: 'PDF', url: '/papers/chartgpt.pdf' },
+        { label: 'PDF', url: basePath + '/pdfs/chartgpt.pdf' },
         { label: 'ArXiv', url: 'https://arxiv.org/abs/2311.01920' },
         { label: 'HuggingFace', url: 'https://huggingface.co/yuan-tian/chartgpt-llama3' },
         { label: 'IEEE', url: 'https://ieeexplore.ieee.org/document/10443572' }
@@ -37,7 +37,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         venue: 'IEEE Transactions on Visualization and Computer Graphics',
         image: '/figs/relaq.png',
         links: [
-          { label: 'PDF', url: '/papers/relaq.pdf' },
+          { label: 'PDF', url: basePath + '/pdfs/relaq.pdf' },
           { label: 'IEEE', url: 'https://ieeexplore.ieee.org/abstract/document/10521861' }
         ]
       }
@@ -49,7 +49,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         venue: 'Computational Visual Media',
         image: '/figs/urban.png',
         links: [
-          { label: 'PDF', url: '/papers/urban.pdf' },
+          { label: 'PDF', url: basePath + '/pdfs/urban.pdf' },
           { label: 'Springer', url: 'https://link.springer.com/article/10.1007/s41095-022-0275-7' }
         ]
     }
@@ -61,7 +61,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         venue: 'IEEE Transactions on Visualization and Computer Graphics (VIS 2022)',
         image: '/figs/ecoalvis.png',
         links: [
-          { label: 'PDF', url: '/papers/ecoalvis.pdf' },
+          { label: 'PDF', url: basePath + '/pdfs/ecoalvis.pdf' },
           { label: 'IEEE', url: 'https://ieeexplore.ieee.org/abstract/document/9908527' }
         ]
     }

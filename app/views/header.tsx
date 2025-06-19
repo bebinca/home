@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { basePath } from "../path";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Header() {
           <a href="#experience" className="hover:underline color-gray-800">
             Experience
           </a>
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline color-gray-800">
+          <a href={`${basePath}/pdfs/cv.pdf`} target="_blank" rel="noopener noreferrer" className="hover:underline color-gray-800">
             CV
           </a>
         </nav>
@@ -51,7 +52,7 @@ export default function Header() {
               Experience
             </a>
             <a
-              href="/cv.pdf"
+              href={`${basePath}/pdfs/cv.pdf`}
               target="_blank"
               rel="noopener noreferrer"
               className="block hover:underline"
