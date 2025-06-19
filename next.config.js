@@ -5,7 +5,7 @@ const nextConfig = {
     images: {
       unoptimized: true, // 如果你用了 <Image>，需要禁用图像优化
     },
-    assetPrefix: "/home",
+    assetPrefix: process.env.NODE_ENV === 'production' ? '' : '/home',
     // process.env.NODE_ENV === 'production' ? '/home/' : ''
   }
   
