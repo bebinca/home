@@ -12,7 +12,7 @@ export default function Description() {
         <a href="http://zjuidg.org" target="_blank" className="text-blue-600 hover:underline">
           Interactive Data Group (ZJUIDG)
         </a>, supervised by&nbsp;
-        <a href="http://ycwu.org" target="_blank" className="text-blue-600 hover:underline">
+        <a href="http://www.ycwu.org" target="_blank" className="text-blue-600 hover:underline">
           Prof. Yingcai Wu
         </a>. My research focuses on AI-assisted visual analytics, with a particular interest in using large language models (LLMs) to support data understanding and visualization generation.
       </p>
