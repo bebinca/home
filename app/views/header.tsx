@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="bg-white text-gray-800 w-full px-4 py-4 sticky top-0 z-50 shadow-sm border-b border-gray-200">
       <div className="flex justify-between items-center max-w-[1080px] mx-auto">
-        <h1 className="text-2xl font-bold">Yuan Tian ( 田原 )</h1>
+        <h1 className="text-2xl font-bold">Yuan Tian</h1>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-lg">
