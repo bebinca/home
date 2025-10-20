@@ -18,6 +18,20 @@ type Publication = {
 }
 
 const publicationsByYear: { [year: string]: Publication[] } = {
+  '2025': [
+    {
+        title: 'ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs',
+        authors: 'Yuan Tian, Chuhan Zhang, Xiaotong Wang, Sitong Pan, Weiwei Cui, Haidong Zhang, Dazhen Deng, Yingcai Wu',
+        venue: 'Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST 2025)',
+        image: '/figs/respark.png',
+        links: [
+          { label: 'PDF', url: basePath + '/pdfs/respark.pdf' },
+          { label: 'GitHub', url: basePath + 'https://github.com/ZJUIDG-AIVA/ReSpark' },
+          { label: 'ArXiv', url: 'https://arxiv.org/abs/2502.02329' },
+          { label: 'ACM', url: 'https://dl.acm.org/doi/10.1145/3746059.3747644' }
+        ]
+    }, 
+  ],
   '2024': [
     {
       title: 'ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language',
@@ -67,15 +81,6 @@ const publicationsByYear: { [year: string]: Publication[] } = {
     }
   ],
   "PrePrint": [
-    {
-        title: 'ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs',
-        authors: 'Yuan Tian, Chuhan Zhang, Xiaotong Wang, Sitong Pan, Weiwei Cui, Haidong Zhang, Dazhen Deng, Yingcai Wu',
-        venue: 'ArXiv',
-        image: '/figs/respark.png',
-        links: [
-          { label: 'ArXiv', url: 'https://arxiv.org/abs/2502.02329' },
-        ]
-    }, 
     {
         title: 'NoteFlow: Recommending Charts as Sight Glasses for Tracing Data Flow in Computational Notebooks',
         authors: 'Yuan Tian, Dazhen Deng, Sen Yang, Huawei Zheng, Bowen Shi, Kai Xiong, Xinjing Yi, Yingcai Wu',
