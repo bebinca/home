@@ -26,7 +26,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         image: '/figs/respark.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/respark.pdf' },
-          { label: 'GitHub', url: basePath + 'https://github.com/ZJUIDG-AIVA/ReSpark' },
+          { label: 'GitHub', url: 'https://github.com/ZJUIDG-AIVA/ReSpark' },
           { label: 'ArXiv', url: 'https://arxiv.org/abs/2502.02329' },
           { label: 'ACM', url: 'https://dl.acm.org/doi/10.1145/3746059.3747644' }
         ]

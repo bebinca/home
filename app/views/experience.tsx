@@ -11,7 +11,7 @@ const experienceList: Experience[] = [
   {
     org: 'State Key Lab of CAD & CG, Zhejiang University',
     role: 'Ph.D. Candidate in Computer Science and Technology',
-    time: '2022 - Present',
+    time: '2023 - Present',
     // description: 'Working on AI-assisted visual analytics and chart understanding.'
   },
   {
@@ -21,8 +21,14 @@ const experienceList: Experience[] = [
     // description: 'Explored LLM-based visualization generation and multi-agent simulations.'
   },
   {
-    org: 'Zhejiang University',
-    role: 'Undergraduate Student',
+    org: 'State Key Lab of CAD & CG, Zhejiang University',
+    role: 'Master in Computer Science and Technology',
+    time: '2022 - 2023',
+    // description: 'Explored LLM-based visualization generation and multi-agent simulations.'
+  },
+  {
+    org: 'Chu Kochen Honors College, Zhejiang University',
+    role: 'B.S. in Computer Science and Technology',
     time: '2018 - 2022',
     // description: 'Explored LLM-based visualization generation and multi-agent simulations.'
   },

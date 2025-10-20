@@ -4,6 +4,7 @@ import Description from "./views/description"
 import Publications from "./views/publications"
 import Experience from "./views/experience"
 import News from "./views/news"
+import Teaching from "./views/teaching"
 
 export default function Home() {
   return (
@@ -20,8 +21,14 @@ export default function Home() {
           {/* <News /> */}
           <Publications />
           <Experience />
+          <Teaching />
         </div>
       </div>
+
+      {/* 底栏 */}
+      <footer className="text-center text-sm text-gray-500 py-6 border-t">
+        © {new Date().getFullYear()} Yuan Tian. All rights reserved. Last updated: Oct 2025
+      </footer>
     </main>
   )
 }
