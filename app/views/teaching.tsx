@@ -2,18 +2,19 @@
 
 export default function Teaching() {
   const teachingList = [
-    { date: '2023-2024', text: 'Cross Media Visualization and Information Visualization' },
-    { date: '2023-2024', text: 'International Visualization Summer School of ZJU' }
+    { emphasize: 'Summer 2024-2025', text: 'TA in the International Visualization Summer School, ZJU' },
+    { emphasize: 'Summer 2023', text: 'Coordinator & TA in the International Visualization Summer School, ZJU' },
+    { emphasize: 'Winter 2023', text: 'Coordinator & TA in Cross Media Visualization and Information Visualization, ZJU' }
   ]
 
   return (
     <section id="teaching">
       <h1 className="text-2xl font-semibold mb-4">Teaching</h1>
-      <ul className="space-y-2">
+      <ul className="list-disc list-inside space-y-1">
         {teachingList.map((item, idx) => (
-          <li key={idx} className="flex items-start gap-2">
-            <span className="font-semibold text-sm min-w-[4.5rem]">{item.date}</span>
-            <span className="text-sm">{item.text}</span>
+          <li key={idx} className="text-base">
+            <span className="font-semibold">{item.emphasize},</span>{' '}
+            <span className="text-gray-600">{item.text}</span>
           </li>
         ))}
       </ul>

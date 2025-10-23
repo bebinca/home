@@ -18,9 +18,9 @@ export default function Header() {
           <a href="#experience" className="hover:underline color-gray-800">
             Experience
           </a>
-          {/* <a href={`${basePath}/pdfs/cv.pdf`} target="_blank" rel="noopener noreferrer" className="hover:underline color-gray-800">
+          <a href={`${basePath}/pdfs/cv.pdf`} target="_blank" rel="noopener noreferrer" className="hover:underline color-gray-800">
             CV
-          </a> */}
+          </a>
         </nav>
 
         {/* Mobile Hamburger */}

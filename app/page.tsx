@@ -5,6 +5,7 @@ import Publications from "./views/publications"
 import Experience from "./views/experience"
 import News from "./views/news"
 import Teaching from "./views/teaching"
+import Services from "./views/services"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           {/* <News /> */}
           <Publications />
           <Experience />
+          <Services />
           <Teaching />
         </div>
       </div>
@@ -32,22 +34,3 @@ export default function Home() {
     </main>
   )
 }
-
-
-// import About from "./views/about"
-// import Experience from "./views/experience"
-// import Publications from "./views/publications"
-// import Header from "./views/header"
-
-// export default function Home() {
-//   return (
-//     <main>
-//       <Header/>
-//       <div className="w-full px-0 md:w-[70%] lg:mx-auto">
-//       <About/>
-//       <Publications/>
-//       <Experience/>
-//       </div>
-//     </main>
-//   )
-// }

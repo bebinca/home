@@ -42,8 +42,8 @@ export default function Experience() {
         {experienceList.map((exp, idx) => (
           <li key={idx}>
             <h3 className="text-md font-semibold">{exp.role}</h3>
-            <p className="text-sm text-gray-700">{exp.org}</p>
-            <p className="text-sm italic text-gray-500">{exp.time}</p>
+            <p className="text-base text-gray-700">{exp.org}</p>
+            <p className="text-base italic text-gray-500">{exp.time}</p>
             {exp.description && <p className="text-sm mt-1">{exp.description}</p>}
           </li>
         ))}

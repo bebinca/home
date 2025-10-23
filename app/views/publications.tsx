@@ -22,7 +22,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
     {
         title: 'ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs',
         authors: 'Yuan Tian, Chuhan Zhang, Xiaotong Wang, Sitong Pan, Weiwei Cui, Haidong Zhang, Dazhen Deng, Yingcai Wu',
-        venue: 'Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST 2025)',
+        venue: 'UIST 2025',
         image: '/figs/respark.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/respark.pdf' },
@@ -35,7 +35,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
   '2024': [
     {
       title: 'ChartGPT: Leveraging LLMs to Generate Charts From Abstract Natural Language',
-      authors: 'Yuan Tian, Weiwei Cui, Dazhen Deng, Xinjing Yi, Yurun Yang, Haidong Zhang, Yingcai Wu',
+      authors: 'Yuan Tian, Weiwei Cui, Dazhen Deng, Xinjing Yi, Yurun Yang, Haidong Zhang, and Yingcai Wu',
       venue: 'IEEE Transactions on Visualization and Computer Graphics',
       image: '/figs/chartgpt.png',
       links: [
@@ -47,7 +47,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
     }, 
     {
         title: 'Relation-driven Query of Multiple Time Series',
-        authors: 'Shuhan Liu, Yuan Tian, Zikun Deng, Weiwei Cui, Haidong Zhang, Di Weng, Yingcai Wu',
+        authors: 'Shuhan Liu, Yuan Tian, Zikun Deng, Weiwei Cui, Haidong Zhang, Di Weng, and Yingcai Wu',
         venue: 'IEEE Transactions on Visualization and Computer Graphics',
         image: '/figs/relaq.png',
         links: [
@@ -59,7 +59,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
   "2023": [
     {
         title: 'A Survey of Urban Visual Analytics: Advances and Future Directions',
-        authors: 'Zikun Deng, Di Weng, Shuhan Liu, Yuan Tian, Mingliang Xu, Yingcai Wu',
+        authors: 'Zikun Deng, Di Weng, Shuhan Liu, Yuan Tian, Mingliang Xu, and Yingcai Wu',
         venue: 'Computational Visual Media',
         image: '/figs/urban.png',
         links: [
@@ -71,7 +71,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
   "2022": [
     {
         title: 'ECoalVis: Visual Analysis of Control Strategies in Coal-fired Power Plants',
-        authors: 'Shuhan Liu, Di Weng, Yuan Tian, Zikun Deng, Haoran Xu, Xiangyu Zhu, Honglei Yin, Xianyuan Zhan, Yingcai Wu',
+        authors: 'Shuhan Liu, Di Weng, Yuan Tian, Zikun Deng, Haoran Xu, Xiangyu Zhu, Honglei Yin, Xianyuan Zhan, and Yingcai Wu',
         venue: 'IEEE Transactions on Visualization and Computer Graphics (VIS 2022)',
         image: '/figs/ecoalvis.png',
         links: [
@@ -83,11 +83,11 @@ const publicationsByYear: { [year: string]: Publication[] } = {
   "PrePrint": [
     {
         title: 'NoteFlow: Recommending Charts as Sight Glasses for Tracing Data Flow in Computational Notebooks',
-        authors: 'Yuan Tian, Dazhen Deng, Sen Yang, Huawei Zheng, Bowen Shi, Kai Xiong, Xinjing Yi, Yingcai Wu',
-        venue: 'ArXiv',
+        authors: 'Yuan Tian, Dazhen Deng, Sen Yang, Huawei Zheng, Bowen Shi, Kai Xiong, Xinjing Yi, and Yingcai Wu',
+        venue: 'arXiv',
         image: '/figs/noteflow.png',
         links: [
-          { label: 'ArXiv', url: 'https://arxiv.org/abs/2502.02326' },
+          { label: 'arXiv', url: 'https://arxiv.org/abs/2502.02326' },
         ]
     }
   ]
@@ -116,7 +116,7 @@ export default function Publications() {
         .sort((a, b) => Number(b[0]) - Number(a[0])) // 按年份倒序排列
         .map(([year, pubs]) => (
           <div key={year}>
-            <h2 className="text-lg font-semibold mb-2">{year}</h2>
+            <h2 className="text-xl font-semibold mb-2">{year}</h2>
             <ul className="space-y-6">
               {pubs.map((pub, i) => (
                 <li key={i} className="flex flex-col md:flex-row gap-4 p-4 border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition">
@@ -129,11 +129,11 @@ export default function Publications() {
                     />
                   )}
                   <div className="flex-1 space-y-1">
-                    <h3 className="font-semibold">{pub.title}</h3>
-                    <p className="text-sm text-gray-700">
+                    <h3 className="font-semibold text-lg">{pub.title}</h3>
+                    <p className="text-base text-gray-700">
                     {highlightAuthor(pub.authors, 'Yuan Tian')}
                     </p>
-                    <p className="text-sm italic text-gray-700">{pub.venue}</p>
+                    <p className="text-base italic text-gray-700">{pub.venue}</p>
                     {pub.award && (
                       <p className="text-sm text-amber-600 font-medium">{pub.award}</p>
                     )}
