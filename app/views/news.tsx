@@ -6,7 +6,7 @@ export default function News() {
     { date: '2026-07', text: '1 paper accepted to IEEE VIS 2026.' },
     { date: '2026-06', text: '1 paper accepted to ACM UIST 2026.' },
     { date: '2026-04', text: 'I\'m thrilled to start my visit at CMU, working with Prof. Sherry Wu!' },
-    { date: '2026-01', text: '2 papers, NoteFLow and ExChart, were accepted to ACM CHI 2026.' }
+    { date: '2026-01', text: '2 papers, NoteFlow and ExChart, were accepted to ACM CHI 2026.' }
   ]
 
   return (
