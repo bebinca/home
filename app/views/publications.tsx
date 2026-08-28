@@ -18,6 +18,29 @@ type Publication = {
 }
 
 const publicationsByYear: { [year: string]: Publication[] } = {
+  '2026':[
+    {
+        title: 'NoteFlow: Leveraging Charts as Sight Glasses for Consistent and Continuous Data Flow Tracing',
+        authors: 'Yuan Tian, Dazhen Deng, Sen Yang, Huawei Zheng, Bowen Shi, Kai Xiong, Xinjing Yi, and Yingcai Wu',
+        venue: 'CHI 2026',
+        image: '/figs/noteflow.png',
+        links: [
+          { label: 'DOI', url: 'https://dl.acm.org/doi/full/10.1145/3772318.3790356' },
+          { label: 'arXiv', url: 'https://arxiv.org/abs/2502.02326' },
+        ]
+    }, 
+    {
+      title: 'Making Multimodal LLMs Reliable Chart Data Extractors: A Benchmark and Training Framework',
+        authors: 'Yuchen He, Peizhi Ying, Liqi Cheng, Kuilin Peng, Yuan Tian, Dazhen Deng, Yingcai Wu',
+        venue: 'CHI 2026',
+        image: '/figs/exchart.png',
+        links: [
+          { label: 'DOI', url: 'https://dl.acm.org/doi/10.1145/3772318.3790721' },
+          { label: 'Website', url: 'https://exchart.github.io/' },
+        ]
+    }
+  ],
+
   '2025': [
     {
         title: 'ReSpark: Leveraging Previous Data Reports as References to Generate New Reports with LLMs',
@@ -26,9 +49,9 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         image: '/figs/respark.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/respark.pdf' },
+          { label: 'DOI', url: 'https://dl.acm.org/doi/10.1145/3746059.3747644' },
           { label: 'GitHub', url: 'https://github.com/ZJUIDG-AIVA/ReSpark' },
           { label: 'ArXiv', url: 'https://arxiv.org/abs/2502.02329' },
-          { label: 'ACM', url: 'https://dl.acm.org/doi/10.1145/3746059.3747644' }
         ]
     }, 
   ],
@@ -40,9 +63,9 @@ const publicationsByYear: { [year: string]: Publication[] } = {
       image: '/figs/chartgpt.png',
       links: [
         { label: 'PDF', url: basePath + '/pdfs/chartgpt.pdf' },
+        { label: 'DOI', url: 'https://ieeexplore.ieee.org/document/10443572' },
         { label: 'ArXiv', url: 'https://arxiv.org/abs/2311.01920' },
         { label: 'HuggingFace', url: 'https://huggingface.co/yuan-tian/chartgpt-llama3' },
-        { label: 'IEEE', url: 'https://ieeexplore.ieee.org/document/10443572' }
       ]
     }, 
     {
@@ -52,7 +75,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         image: '/figs/relaq.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/relaq.pdf' },
-          { label: 'IEEE', url: 'https://ieeexplore.ieee.org/abstract/document/10521861' }
+          { label: 'DOI', url: 'https://ieeexplore.ieee.org/abstract/document/10521861' }
         ]
       }
   ], 
@@ -64,7 +87,7 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         image: '/figs/urban.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/urban.pdf' },
-          { label: 'Springer', url: 'https://link.springer.com/article/10.1007/s41095-022-0275-7' }
+          { label: 'DOI', url: 'https://link.springer.com/article/10.1007/s41095-022-0275-7' }
         ]
     }
   ],
@@ -76,18 +99,18 @@ const publicationsByYear: { [year: string]: Publication[] } = {
         image: '/figs/ecoalvis.png',
         links: [
           { label: 'PDF', url: basePath + '/pdfs/ecoalvis.pdf' },
-          { label: 'IEEE', url: 'https://ieeexplore.ieee.org/abstract/document/9908527' }
+          { label: 'DOI', url: 'https://ieeexplore.ieee.org/abstract/document/9908527' }
         ]
     }
   ],
   "PrePrint": [
     {
-        title: 'NoteFlow: Recommending Charts as Sight Glasses for Tracing Data Flow in Computational Notebooks',
-        authors: 'Yuan Tian, Dazhen Deng, Sen Yang, Huawei Zheng, Bowen Shi, Kai Xiong, Xinjing Yi, and Yingcai Wu',
-        venue: 'arXiv',
-        image: '/figs/noteflow.png',
+        title: 'CycleChart: A Unified Consistency-Based Learning Framework for Bidirectional Chart Understanding and Generation',
+        authors: 'Dazhen Deng, Sen Yang, Yuchen He, Yuan Tian, Yingcai Wu',
+        venue: 'arXiv preprint',
+        image: '/figs/cyclechart.png',
         links: [
-          { label: 'arXiv', url: 'https://arxiv.org/abs/2502.02326' },
+          { label: 'arXiv', url: 'https://arxiv.org/abs/2512.19173' }
         ]
     }
   ]

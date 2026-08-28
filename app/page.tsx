@@ -19,7 +19,7 @@ export default function Home() {
         {/* 右边主内容区 */}
         <div className="flex-1 space-y-12">
           <Description />
-          {/* <News /> */}
+          <News />
           <Publications />
           <Experience />
           <Services />
@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* 底栏 */}
       <footer className="text-center text-sm text-gray-500 py-6 border-t">
-        © {new Date().getFullYear()} Yuan Tian. All rights reserved. Last updated: Oct 2025
+        © {new Date().getFullYear()} Yuan Tian. All rights reserved. Last updated: Aug 2026
       </footer>
     </main>
   )

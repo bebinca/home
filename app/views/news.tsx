@@ -2,9 +2,11 @@
 
 export default function News() {
   const newsList = [
-    { date: '2025-06', text: 'Our paper on GraphTide was conditionally accepted to UIST 2025!' },
-    { date: '2025-03', text: 'I gave an invited talk at XYZ Workshop on visual analytics.' },
-    { date: '2024-11', text: 'Received Best Paper Honorable Mention at IEEE VIS 2024.' }
+    { date: '2026-07', text: 'Our paper "ChartGPT: Leveraging LLMs to Generate Charts from Abstract Natural Language" received the TVCG 2025 Best Paper Award!' },
+    { date: '2026-07', text: '1 paper accepted to IEEE VIS 2026.' },
+    { date: '2026-06', text: '1 paper accepted to ACM UIST 2026.' },
+    { date: '2026-04', text: 'I\'m thrilled to start my visit at CMU, working with Prof. Sherry Wu!' },
+    { date: '2026-01', text: '2 papers, NoteFLow and ExChart, were accepted to ACM CHI 2026.' }
   ]
 
   return (
